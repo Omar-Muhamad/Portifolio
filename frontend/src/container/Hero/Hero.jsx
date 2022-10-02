@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import AppWrap from '../../wrapper/AppWrap';
 import images from '../../constants/images'
 import './Hero.scss';
 
@@ -17,7 +18,7 @@ const scaleVariants = {
 
 const Hero = () => {
   return (
-    <section id="hero" className='app__hero app__flex'>
+    <section className='app__hero app__flex'>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -69,6 +70,6 @@ const Hero = () => {
       </motion.div>
     </section>
   )
-}
+};
 
-export default Hero
+export default AppWrap(Hero, "home");

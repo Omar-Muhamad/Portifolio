@@ -10,7 +10,8 @@ const Header = () => {
 
   const nanLinks = [
     'home', 'about', 'work', 'skills', 'contact' 
-  ]
+  ];
+
   return (
     <header>
       <nav className="app__navbar">
