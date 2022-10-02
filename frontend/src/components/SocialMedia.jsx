@@ -4,15 +4,15 @@ import { BsTwitter, BsGithub, BsLinkedin } from 'react-icons/bs'
 const SocialMedia = () => {
   return (
     <div className='app__social'>
-      <div>
+      <a href='https://twitter.com/Eng_OmarMuhamad' target="_blank" rel="noreferrer">
         <BsTwitter />
-      </div>
-      <div>
+      </a>
+      <a href='https://github.com/Omar-Muhamad' target="_blank" rel="noreferrer">
         <BsGithub />
-      </div>
-      <div>
+      </a>
+      <a href='https://www.linkedin.com/in/eng-omarmuhammad/' target="_blank" rel="noreferrer">
         <BsLinkedin />
-      </div>
+      </a>
     </div>
   )
 };
