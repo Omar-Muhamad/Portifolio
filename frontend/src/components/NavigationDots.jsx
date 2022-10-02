@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavigationDots = ({ active }) => {
   const nanLinks = [
-    'home', 'about', 'work', 'skills', 'contact' 
+    'home', 'about', 'work', 'skills', 'testimonials' 
   ];
 
   return (

@@ -9,7 +9,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   const nanLinks = [
-    'home', 'about', 'work', 'skills', 'contact' 
+    'home', 'about', 'work', 'skills', 'testimonials' 
   ];
 
   return (
@@ -19,8 +19,8 @@ const Header = () => {
           <img src={images.logo} alt="logo" />
         </div>
         <ul className="app__navbar-links">
-          {nanLinks.map((link) => (
-            <li className="app__flex">
+          {nanLinks.map((link, index) => (
+            <li key={link + index} className="app__flex">
               <div></div>
               <a href={`#${link}`}>{link}</a>
             </li>
